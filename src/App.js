@@ -1,12 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Routing/AllRouting/AllRouting";
 
 function App() {
-  return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
